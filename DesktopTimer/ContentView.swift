@@ -72,10 +72,10 @@ struct ContentView: View {
                 Text("03:00").tag(3 * 60)
                 Text("05:00").tag(5 * 60)
                 Text("10:00").tag(10 * 60)
-                Text("15.00").tag(15 * 60)
-                Text("20.00").tag(20 * 60)
-                Text("25.00").tag(25 * 60)
-                Text("30.00").tag(30 * 60)
+                Text("15:00").tag(15 * 60)
+                Text("20:00").tag(20 * 60)
+                Text("25:00").tag(25 * 60)
+                Text("30:00").tag(30 * 60)
             }
             // NOTE: onChange() event will not be generated for the 1st change
             // For the workaround, use onAppear() as well
