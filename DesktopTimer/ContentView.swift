@@ -32,10 +32,13 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(timeStr)
-                .font(.custom("Arial", size: 60))
+                .font(.system(size: 60))
+                .fontWeight(.thin)
+                .monospacedDigit()
                 .foregroundColor(txtColor)
                 .frame(width: 175, height:60)
                 .padding(.top, -20)
+                .shadow(color: Color.black, radius: 1.0)
 
             HStack {
                 Button(action: ssAction) {
@@ -152,7 +155,10 @@ struct ContentView: View {
         } else {
             if 0 == theme {
                 // Dark
-                txtColor = Color.black
+                txtColor = Color(red: 0.28,
+                                 green: 0.53,
+                                 blue: 0.75,
+                                 opacity: 1.0)
             } else {
                 // Light
                 txtColor = Color.white
@@ -166,7 +172,10 @@ struct ContentView: View {
     func updateBtn() -> Void{
         if 0 == theme {
             // Dark
-            btnTxtColor = Color.black
+            btnTxtColor = Color(red: 0.28,
+                                green: 0.53,
+                                blue: 0.75,
+                                opacity: 1.0)
         } else {
             // Light
             btnTxtColor = Color.white

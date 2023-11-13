@@ -33,7 +33,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             // Setup mainWindow
 
             // NOTE: To move the window by trackpad, alpha should be greater than 0.0
-            NSApp.mainWindow?.backgroundColor = NSColor(white: 1, alpha: 0.1)
+            NSApp.mainWindow?.backgroundColor = NSColor(white: 0.1, alpha: 0.1)
 
             NSApp.mainWindow?.level = .floating
             NSApp.mainWindow?.isOpaque = false
